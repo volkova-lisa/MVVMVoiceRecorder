@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/recordFragment"
+        android:id="@+id/record_menu"
         android:icon="@drawable/ic_baseline_mic_24"
         android:title="Запись"/>
     <item
-        android:id="@+id/listRecordFragment"
+        android:id="@+id/list_menu"
         android:icon="@drawable/ic_baseline_list_24"
         android:title="Список"/>
 </menu>

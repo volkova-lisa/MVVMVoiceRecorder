@@ -4,10 +4,14 @@ import android.app.ActivityManager
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.setupWithNavController
 import com.example.mvvmvoicerecorder.databinding.ActivityMainBinding
+import com.example.mvvmvoicerecorder.record.RecordFragment
+import com.example.mvvmvoicerecorder.recordsList.RecordsListFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +25,29 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
         navController = Navigation.findNavController(this, R.id.nav_host_fragment_container)
+        mBinding.bottomNavigationView.setupWithNavController(navController)
+        mBinding.bottomNavigationView.setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.list_menu -> replaceFragment(RecordsListFragment())
+                R.id.record_menu -> replaceFragment(RecordFragment())
+            }
+            true
+        }
+    }
+
+
+    private fun replaceFragment(fragment: Fragment) {
+        if(fragment != null){
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.nav_host_fragment_container, fragment)
+            transaction.commit()
+        }
+    }
+
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 
     fun isServiceRunning(): Boolean {

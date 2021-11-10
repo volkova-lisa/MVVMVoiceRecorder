@@ -3,15 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/rocordsListFragment">
-
+    app:startDestination="@id/recordFragment">
     <fragment
-        android:id="@+id/rocordsListFragment"
-        android:name="com.example.mvvmvoicerecorder.recordsList.RocordsListFragment"
-        android:label="fragment_rocords_list"
-        tools:layout="@layout/fragment_rocords_list" />
-    <fragment
-        android:id="@+id/recordFragment2"
+        android:id="@+id/recordFragment"
         android:name="com.example.mvvmvoicerecorder.record.RecordFragment"
-        android:label="RecordFragment" />
+        android:label="fragment_record"
+        tools:layout="@layout/fragment_record" />
+    <fragment
+        android:id="@+id/recordsListFragment"
+        android:name="com.example.mvvmvoicerecorder.recordsList.RecordsListFragment"
+        android:label="RecordsListFragment" />
 </navigation>

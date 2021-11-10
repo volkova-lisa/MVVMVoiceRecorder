@@ -36,8 +36,6 @@ class RecordFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentRecordBinding.inflate(layoutInflater, container, false)
-
-
         database = context?.let { RecordDatabase.getInstance(it).recordDao }
 
         mainActivity = activity as MainActivity
