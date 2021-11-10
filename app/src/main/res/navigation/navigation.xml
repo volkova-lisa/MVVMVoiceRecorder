@@ -2,15 +2,16 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation">
+    android:id="@+id/navigation"
+    app:startDestination="@id/rocordsListFragment">
+
     <fragment
-        android:id="@+id/recordFragment"
-        android:name="com.example.mvvmvoicerecorder.record.RecordFragment"
-        android:label="fragment_record"
-        tools:layout="@layout/fragment_record" />
-    <fragment
-        android:id="@+id/listRecordFragment"
+        android:id="@+id/rocordsListFragment"
         android:name="com.example.mvvmvoicerecorder.recordsList.RocordsListFragment"
-        android:label="fragment_list_record"
+        android:label="fragment_rocords_list"
         tools:layout="@layout/fragment_rocords_list" />
+    <fragment
+        android:id="@+id/recordFragment2"
+        android:name="com.example.mvvmvoicerecorder.record.RecordFragment"
+        android:label="RecordFragment" />
 </navigation>
