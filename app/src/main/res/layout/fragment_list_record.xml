@@ -4,13 +4,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".recordsList.ListRecordFragment">
+    tools:context="com.example.mvvmvoicerecorder.listRecord.ListRecordViewModel">
 
     <data>
 
         <variable
             name="listRecordViewModel"
-            type="com.example.mvvmvoicerecorder.recordsList.ListRecordViewModel" />
+            type="com.example.mvvmvoicerecorder.listRecord.ListRecordViewModel" />
     </data>
 
     <RelativeLayout

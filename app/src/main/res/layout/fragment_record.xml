@@ -2,7 +2,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context = ".record.RecordFragment">
+    tools:context=".record.RecordFragment">
+
     <data>
         <variable
             name="recordViewModel"
@@ -38,7 +39,6 @@
             android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            android:tintMode="@color/white"
             android:src="@drawable/ic_baseline_mic_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
