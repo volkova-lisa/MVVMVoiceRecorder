@@ -10,15 +10,16 @@
         android:label="fragment_record"
         tools:layout="@layout/fragment_record" >
         <action
-            android:id="@+id/action_recordFragment_to_recordsListFragment"
-            app:destination="@id/recordsListFragment" />
+            android:id="@+id/action_recordFragment_to_listRecordFragment"
+            app:destination="@id/listRecordFragment" />
     </fragment>
     <fragment
-        android:id="@+id/recordsListFragment"
+        android:id="@+id/listRecordFragment"
         android:name="com.example.mvvmvoicerecorder.recordsList.ListRecordFragment"
-        android:label="RecordsListFragment" >
+        android:label="fragment_list_record"
+        tools:layout="@layout/fragment_list_record" >
         <action
-            android:id="@+id/action_recordsListFragment_to_recordFragment"
+            android:id="@+id/action_listRecordFragment_to_recordFragment"
             app:destination="@id/recordFragment" />
     </fragment>
 </navigation>
