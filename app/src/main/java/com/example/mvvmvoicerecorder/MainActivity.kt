@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
         mBinding.bottomNavigationView.setupWithNavController(navController)
         mBinding.bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.list_menu -> replaceFragment(RecordsListFragment())
-                R.id.record_menu -> replaceFragment(RecordFragment())
+                R.id.list_menu -> navController.navigate(R.id.action_recordFragment_to_recordsListFragment)
+                R.id.record_menu -> navController.navigate(R.id.action_recordsListFragment_to_recordFragment)
             }
             true
         }

@@ -8,9 +8,17 @@
         android:id="@+id/recordFragment"
         android:name="com.example.mvvmvoicerecorder.record.RecordFragment"
         android:label="fragment_record"
-        tools:layout="@layout/fragment_record" />
+        tools:layout="@layout/fragment_record" >
+        <action
+            android:id="@+id/action_recordFragment_to_recordsListFragment"
+            app:destination="@id/recordsListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/recordsListFragment"
         android:name="com.example.mvvmvoicerecorder.recordsList.RecordsListFragment"
-        android:label="RecordsListFragment" />
+        android:label="RecordsListFragment" >
+        <action
+            android:id="@+id/action_recordsListFragment_to_recordFragment"
+            app:destination="@id/recordFragment" />
+    </fragment>
 </navigation>

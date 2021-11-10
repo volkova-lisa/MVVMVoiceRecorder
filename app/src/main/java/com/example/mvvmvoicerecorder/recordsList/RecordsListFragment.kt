@@ -6,12 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.mvvmvoicerecorder.R
-import com.example.mvvmvoicerecorder.databinding.FragmentRecordBinding
-import com.example.mvvmvoicerecorder.databinding.FragmentRocordsListBinding
+import com.example.mvvmvoicerecorder.databinding.FragmentRecordsListBinding
 
 class RecordsListFragment : Fragment() {
 
-    private var _binding: FragmentRocordsListBinding? = null
+    private var _binding: FragmentRecordsListBinding? = null
     private val mBinding get() = _binding!!
 
     override fun onCreateView(
@@ -19,7 +18,7 @@ class RecordsListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentRocordsListBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentRecordsListBinding.inflate(layoutInflater, container, false)
         return mBinding.root
     }
 
