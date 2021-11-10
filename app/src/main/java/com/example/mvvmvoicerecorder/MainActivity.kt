@@ -7,11 +7,8 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.example.mvvmvoicerecorder.databinding.ActivityMainBinding
-import com.example.mvvmvoicerecorder.record.RecordFragment
-import com.example.mvvmvoicerecorder.recordsList.RecordsListFragment
 
 class MainActivity : AppCompatActivity() {
 

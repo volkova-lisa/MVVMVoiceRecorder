@@ -69,10 +69,8 @@ class RecordService: Service() {
     }
 
     private fun createNotification(): Notification? {
-        val mBuilder: NotificationCompat.Builder = NotificationCompat.Builder(
-            applicationContext,
-            getString(R.string.notification_channel_id)
-        )
+        val mBuilder: NotificationCompat.Builder
+                = NotificationCompat.Builder(applicationContext, getString(R.string.notification_channel_id))
             .setSmallIcon(R.drawable.ic_baseline_mic_24)
             .setContentTitle(getString(R.string.app_name))
             .setContentText(getString(R.string.notification_recording))
@@ -93,14 +91,16 @@ class RecordService: Service() {
     private fun setFileNameAndPath() {
         var count = 0
         var f: File
-        val dateTime =
-            SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(System.currentTimeMillis())
+        val dateTime = SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(System.currentTimeMillis())
+
         do {
             mFileName = (getString(R.string.default_file_name)
                     + "_" + dateTime + count + ".mp4")
             mFilePath = application.getExternalFilesDir(null)?.absolutePath
             mFilePath += "/$mFileName"
+
             count++
+
             f = File(mFilePath)
         } while (f.exists() && !f.isDirectory)
     }

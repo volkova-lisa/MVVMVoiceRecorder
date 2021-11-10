@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/recordsListFragment"
-        android:name="com.example.mvvmvoicerecorder.recordsList.RecordsListFragment"
+        android:name="com.example.mvvmvoicerecorder.recordsList.ListRecordFragment"
         android:label="RecordsListFragment" >
         <action
             android:id="@+id/action_recordsListFragment_to_recordFragment"
