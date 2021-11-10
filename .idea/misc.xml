@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/stepa/AndroidStudioProjects/MVVMVoiceRecorder/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/stepa/AndroidStudioProjects/MVVMVoiceRecorder/app/src/main/res/layout/fragment_record.xml" value="0.1" />
         <entry key="..\:/Users/stepa/AndroidStudioProjects/MVVMVoiceRecorder/app/src/main/res/layout/fragment_rocords_list.xml" value="0.1" />
+        <entry key="..\:/Users/stepa/AndroidStudioProjects/MVVMVoiceRecorder/app/src/main/res/menu/menu.xml" value="0.1" />
       </map>
     </option>
   </component>
